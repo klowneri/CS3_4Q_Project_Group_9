@@ -1,0 +1,142 @@
+*{
+    margin: 0;
+    padding: 0;
+    overflow-y: hidden;
+    font-family: customFont;
+    font-size: 1.05em;
+    overflow-x: hidden;
+}
+
+@font-face {
+    font-family: customFont;
+    src: url(Olivera_Demo.ttf);
+}
+
+header{
+    position: fixed;
+    width: 100%;
+    z-index: 2;
+}
+
+nav{
+    display: flex;
+    background-color: #9BB393;
+    justify-content: space-around;
+    align-content: center;
+    padding-top: 0.05vw;
+    padding-bottom: 3vw;
+    height: 4vh;
+    border-bottom: 2px solid black;
+}
+
+.pages{
+    right: 2%;
+    position: absolute;
+}
+
+.pages a{
+    text-decoration: none;
+    color: white;
+    font-size: 150%;
+    margin-left: 3vw;
+    text-transform: uppercase;
+}
+
+.icon img{
+    height: 10vh;
+    width: 5vw;
+    position: absolute;
+    left: 0.5%;
+    top: 1%;
+}
+
+#sigup{
+    background-image: url(images/bg.png);
+    background-repeat: no-repeat;
+    background-size: 100vw 100vh;
+}
+
+#signup{
+    width: 44vw;
+    height: 100vh;
+    position: absolute;
+    right: 3%;
+    top: 18%;
+    animation: fade 5s;
+}
+
+legend{
+    font-size: xx-large;
+    font-weight: bold;
+}
+
+fieldset {
+    background-color: white;
+    width: 44vw;
+    height: 40vw;
+}
+
+#mainoutput{
+    background-image: url(images/bg2.png);
+    background-size: 100vw 100vh;
+    background-repeat: no-repeat;
+}
+#output{
+    position: absolute;
+    right: 6.5%;
+    animation: fade 5s;
+    top: 35%;
+    font-size: 160%;
+    background-color: white;
+    padding: 8px;
+    border: 1px solid black;
+    border-radius: 12px;   
+    width: 35vw;
+}
+
+@keyframes fade {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+#output p{
+    display: inline-block;
+}
+
+h1{
+    position: absolute;
+    top: 15%;
+    right: 11.75%;
+    font-size: 300%;
+    font-weight: 100;
+}
+
+#abtus{
+    background: url(images/abtus.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#desc h1{
+    font-size: 300;
+    margin-top: 15vh;
+    margin-right: 30vw;
+    text-align: center;
+    
+}
+
+#desc h3{
+    font-size: 1.5em;
+    margin-top: 20vw;
+    margin-right: 15vw;
+    margin-left: 15vw;
+    text-align: center;
+    padding: 2vw;
+    color: black;
+    font-weight: 10;
+}
+
+#pfp {
+    position: absolute;
+    left: 47%
+}

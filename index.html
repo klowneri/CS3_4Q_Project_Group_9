@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+</head>
+<body id="sigup">
+    <header>
+        <nav>
+            <span class="icon"><img src="images/CSLogo.png"></span>
+            <span class="pages">
+                <a href="index.html">Sign-up</a>
+                <a href="page3.html">About Us</a>
+            </span>
+        </nav>
+    </header>
+    <form id="signup" onsubmit="return false">
+        <fieldset form="signup">
+            <legend>Sign Up</legend>
+            <br>
+            <label for="fname">First Name</label>
+            <input type="text" id="fname">
+            <a id="fnamereq"></a>
+            <br><br>
+            <label for="lname">Last Name</label>
+            <input type="text" id="lname">
+            <a id="lnamereq"></a>
+            <br><br>
+            <a>Gender</a><a id="genderreq"></a>
+            <br><br>
+            <input type="radio" name="gender" id="male">
+            <label for="male">Male</label>
+            <input type="radio" name="gender" id="female">
+            <label for="female">Female</label>
+            <input type="radio" name="gender" id="pnts">
+            <label for="pnts">Prefer not to say</label>
+            <br><br>
+            <label for="email">Email</label>
+            <input type="text" id="email">
+            <a id="emailreq"></a>
+            <br><br>
+            <label for="psword">Password</label>
+            <input type="password" id="psword">
+            <a id="pswordreq"></a>
+            <br><br>
+            <label for="contnum">Contact Number</label>
+            <input type="tel" id="contnum">
+            <br><br>
+            <label for="support">Why do you support this campaign?</label>
+            <a id="supportreq"></a>
+            <br><br>
+            <textarea id="support" rows="5" cols="60"></textarea>
+            <br>
+            <button onclick="required()">Sign Up</button>
+        </fieldset>
+    </form>
+    <script src="script.js"></script>
+</body>
+</html>
